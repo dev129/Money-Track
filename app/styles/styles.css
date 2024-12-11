@@ -1,0 +1,16 @@
+#TestImage{
+mix-blend-mode: multiply;
+}
+.small-image {
+    width: 150px; /* or any size you prefer */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid white; /* Optional: adds a border to the image */
+    border-radius: 8px; /* Optional: makes the image corners rounded */
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
