@@ -2,10 +2,6 @@
 import React from 'react';
 import { auth, currentUser } from '@clerk/nextjs/server';  // Clerk for authentication
 import SignedOut from './components/SignedOut';
-import CreditCard from './components/CreditCard';
-import Footer from './components/Footer';
-import MarketCap from './components/MarketCap';
-import Transactions from './components/Transactions';
 import SignedIn from './components/SignedIn';
 
 export default async function Page() {

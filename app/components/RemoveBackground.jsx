@@ -1,8 +1,7 @@
 import React from 'react';
-import { SiPolkadot } from 'react-icons/si';
 import '../styles/styles.css';
-
-import LandingPage from '../public/LandingPage2.jpeg';
+import TeamIcon from '../public/Logo.png';
+import LandingPage from '../public/LandingPark.png';
 import Image from 'next/image';
 import { SignedOut, SignInButton } from '@clerk/nextjs';
 
@@ -22,22 +21,21 @@ const RemoveBackground = () => {
       </div>
 
       {/* Title text */}
-      <div className="relative z-10 flex flex-col justify-center items-start h-full text-left px-8">
+      <div className="relative z-10 flex flex-col justify-center items-center h-full text-left px-8">
         {/* Semi-transparent background to improve text visibility */}
         <div className="bg-black bg-opacity-50 p-8 rounded-lg max-w-2xl">
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white">
-            Moneytrack
-          </h1>
-          <p className="mb-6 font-light text-gray-200 lg:mb-8 md:text-lg lg:text-xl">
-            Your personal web3 portfolio
-          </p>
+          {/* Center the image */}
+          <div className="flex justify-center mb-4">
+            <Image src={TeamIcon} alt="Team Logo" height={300} width={300} />
+          </div>
+          
           <div className="flex gap-4">
             <a
               href="#"
               className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               <SignedOut>
-                <SignInButton/>
+                <SignInButton />
               </SignedOut>
               <svg
                 className="w-5 h-5 ml-2 -mr-1"

@@ -9,16 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/runtime": "^7.26.0",
     "@clerk/clerk-react": "^5.19.0",
     "@clerk/nextjs": "^6.8.0",
-    "@imgly/background-removal": "^1.5.7",
-    "@moralisweb3/next": "^2.27.2",
+    "jsqr": "^1.4.0",
     "lucide-react": "^0.468.0",
-    "moralis": "^2.27.2",
     "next": "14.2.10",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.4.0",
+    "react-qr-scanner": "^1.0.0-alpha.11",
+    "react-webcam": "^7.2.0",
     "sharp": "^0.33.5",
     "swr": "^2.2.5"
   },
