@@ -21,6 +21,6 @@ export default async function Page() {
   
   // URL of the image to be processed
 
-  return (<SignedIn walletAddress={walletAddress} apiKey={apiKey}/>
+  return (<SignedIn />
   );
 }
