@@ -1,49 +1,48 @@
 const AboutUs = () => {
-    return (
-      <section className="py-16 bg-[#1D232A] text-white min-h-screen">
-        <div className="max-w-6xl mx-auto text-center px-6">
-          {/* Section Title */}
-          <h2 className="text-4xl font-bold text-white mb-8">Who are we ?</h2>
-  
-          <p className="text-lg text-white mb-8">
-            We are a passionate team of blockchain and cryptocurrency enthusiasts dedicated to helping you manage your crypto investments with ease and security. Our platform is built on the principles of decentralization, security, and user empowerment.
+  return (
+    <section className="py-16 bg-[#1D232A] text-white " >
+      <div className="max-w-6xl mx-auto text-center px-6">
+        {/* Section Title */}
+        <h2 className="text-4xl font-bold text-white mb-8">Who are we?</h2>
+
+        <p className="text-lg text-white mb-8">
+          We are a dedicated team passionate about solving parking challenges. Our goal is to simplify the parking experience for drivers by providing an easy, automated system that helps you find available parking spots quickly and efficiently.
+        </p>
+
+        {/* Mission Statement */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-semibold text-white mb-4">Our Mission</h3>
+          <p className="text-lg text-white">
+            At ParkMate, our mission is to create a seamless parking experience for everyone. We aim to reduce the time spent searching for parking and make the process as convenient as possible. With the power of automation, our system helps drivers find and pay for available parking spots with ease.
           </p>
-  
-          {/* Mission Statement */}
-          <div className="mb-16">
-            <h3 className="text-2xl font-semibold text-white mb-4">Our Mission</h3>
-            <p className="text-lg text-white">
-              Our mission is simple: to provide a secure, easy-to-use platform that helps you track your crypto investments in real-time. Whether you're a seasoned investor or a beginner, our web3-based system allows you to access your data securely and make informed decisions about your portfolio.
+        </div>
+
+        {/* Features List */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h4 className="text-xl font-semibold text-gray-800 mb-4">Automated Parking Spot Detection</h4>
+            <p className="text-gray-600">
+              Our system uses advanced <strong>computer vision</strong> and <strong>sensors</strong> to detect available parking spots. This ensures that drivers have access to accurate information about open spaces.
             </p>
           </div>
-  
-          {/* Features List */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold text-gray-800 mb-4">Web3-Based Security</h4>
-              <p className="text-gray-600">
-                Our platform leverages the power of web3 technology to ensure that your wallet data is safe and secure, with no need to store sensitive information on centralized servers.
-              </p>
-            </div>
-  
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold text-gray-800 mb-4">Real-Time Portfolio Tracking</h4>
-              <p className="text-gray-600">
-                Track your crypto assets and DeFi positions in real-time, allowing you to see how your investments are performing across various blockchains.
-              </p>
-            </div>
-  
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h4 className="text-xl font-semibold text-gray-800 mb-4">Multi-Wallet Support</h4>
-              <p className="text-gray-600">
-                Log in seamlessly using popular wallets like Coinbase Wallet, MetaMask, or OKX Wallet, and easily manage your crypto portfolio in one place.
-              </p>
-            </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h4 className="text-xl font-semibold text-gray-800 mb-4">Easy Payment Options</h4>
+            <p className="text-gray-600">
+              Pay for parking seamlessly using <strong>MetaMask</strong> for cryptocurrency payments or <strong>UPI</strong> for traditional methods. Our payment options are secure and user-friendly.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <h4 className="text-xl font-semibold text-gray-800 mb-4">Available in Commercial Spaces</h4>
+            <p className="text-gray-600">
+              ParkMate is designed to work in <strong>closed area spaces</strong> like malls and commercial parking lots. Our platform helps businesses manage parking efficiently and provides drivers with easy access to available spots.
+            </p>
           </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default AboutUs;
-  
+      </div>
+    </section>
+  );
+};
+
+export default AboutUs;

@@ -11,14 +11,14 @@ const FAQ = () => {
   return (
     <section className="py-12 px-6 bg-[#1D232A] min-h-screen">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-semibold  mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-semibold mb-8">Frequently Asked Questions</h2>
 
         <div className="space-y-6 text-left">
           {faqData.map((faq, index) => (
             <div key={index} className="border-b border-gray-200">
               <button
                 onClick={() => toggleQuestion(index)}
-                className="w-full text-left py-4 px-6 flex justify-between items-center text-lg font-medium text-white  focus:outline-none"
+                className="w-full text-left py-4 px-6 flex justify-between items-center text-lg font-medium text-white focus:outline-none"
               >
                 <span>{faq.question}</span>
                 <svg
@@ -50,29 +50,44 @@ const FAQ = () => {
 
 const faqData = [
   {
-    question: 'How do I log in to my account?',
+    question: 'How accurate is the availability information for parking spots?',
     answer:
-      'You can log in using your web3 wallet. We support Coinbase Wallet, MetaMask, and OKX Wallet. Simply connect your wallet and access your account to start tracking your crypto investments.',
+      'The parking availability information is updated every 5 minutes to ensure you get real-time data. However, please be aware that the status of parking spots may change rapidly, so it\'s always a good idea to check before you head to a location.',
   },
   {
-    question: 'Is my data secure?',
+    question: 'How can I pay for parking?',
     answer:
-      'Yes, your data is secure. Our platform is based on web3 technology, ensuring that your wallet and investment data remain private and encrypted. We do not store your private keys or sensitive information.',
+      'You can make payments using either your MetaMask wallet for cryptocurrency payments or UPI for traditional payments. Both methods are secure and easy to use.',
   },
   {
-    question: 'Can I track my crypto investments?',
+    question: 'Can I cancel or modify my reservation?',
     answer:
-      'Yes, our platform allows you to track your crypto portfolio, see your profit and loss, and analyze your investment performance over time. You can view your transaction history and wallet statistics.',
+      'Currently, ParkMate does not support the ability to change or cancel a parking reservation. Once you enter a parking spot, the process is completed, and no modifications can be made. Refunds are also not available at this time.',
   },
   {
-    question: 'What are DeFi positions and how can I check them?',
+    question: 'Are there electric vehicle (EV) charging stations available?',
     answer:
-      'DeFi (Decentralized Finance) positions represent your investments in decentralized finance protocols. You can check your active DeFi positions and track their performance directly from your dashboard.',
+      'EV charging stations are available depending on the location. For areas with EV charging infrastructure, you’ll be able to see charging options in the app. Availability may vary by place.',
   },
   {
-    question: 'What are active chains?',
+    question: 'How can I report an issue with a parking space or app feature?',
     answer:
-      'Active chains refer to the blockchains on which your assets are being tracked. Our platform supports multiple blockchains, and you can monitor your assets across different chains simultaneously.',
+      'If you encounter any issues, you can report them easily by visiting our "Contact Us" page within the app or on the website. Our support team will address your concerns promptly.',
+  },
+  {
+    question: 'Is ParkMate available for businesses or commercial parking lots?',
+    answer:
+      'Yes, ParkMate is available for closed area spaces like malls and commercial properties. We help manage parking in such locations by providing real-time availability and easy payment methods.',
+  },
+  {
+    question: 'How does ParkMate detect available parking spots?',
+    answer:
+      'ParkMate uses computer vision and sensors to detect available parking spaces. This technology ensures accurate and up-to-date information for users, making it easy to find a parking spot in crowded areas.',
+  },
+  {
+    question: 'Can I view my parking history or receipts in the app?',
+    answer:
+      'Currently, ParkMate does not provide historical data or receipts through the app. We are considering adding this feature in the future, but for now, users can track only current parking availability.',
   },
 ];
 

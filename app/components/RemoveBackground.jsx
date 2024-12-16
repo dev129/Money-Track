@@ -4,8 +4,11 @@ import TeamIcon from '../public/Logo.png';
 import LandingPage from '../public/LandingPark.png';
 import Image from 'next/image';
 import { SignedOut, SignInButton } from '@clerk/nextjs';
+import TellMeMore from '../components/TellMeMore'
 
 const RemoveBackground = () => {
+  // Function to handle scroll when the "Tell Me More" button is clicked
+  
   return (
     <div className="relative w-full h-screen">
       {/* Background Image - Full Cover */}
@@ -14,7 +17,7 @@ const RemoveBackground = () => {
           src={LandingPage}
           alt="Background"
           layout="fill"
-          objectFit="cover"
+          style={{objectFit:'cover'}}
           quality={100}
           priority
         />
@@ -28,7 +31,7 @@ const RemoveBackground = () => {
           <div className="flex justify-center mb-4">
             <Image src={TeamIcon} alt="Team Logo" height={300} width={300} />
           </div>
-          
+
           <div className="flex gap-4">
             <a
               href="#"
@@ -50,12 +53,7 @@ const RemoveBackground = () => {
                 ></path>
               </svg>
             </a>
-            <a
-              href="#"
-              className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
-            >
-              Tell Me More
-            </a>
+            <TellMeMore/>
           </div>
         </div>
       </div>

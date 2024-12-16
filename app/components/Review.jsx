@@ -1,24 +1,22 @@
 'use client'
-import { useState } from 'react';
-
 const Reviews = () => {
   const reviews = [
     {
       name: 'Alice Johnson',
       rating: 5,
-      review: 'This platform has completely transformed the way I track my crypto investments. The web3 integration makes it seamless to check my profits and losses in real time. Highly recommend!',
-      avatar: 'https://randomuser.me/api/portraits/thumb/women/75.jpg', 
+      review: 'ParkMate has completely transformed how I find parking. The automated system makes it so easy to find available spots, and the payment options are seamless. Highly recommend this service!',
+      avatar: 'https://randomuser.me/api/portraits/thumb/women/75.jpg',
     },
     {
       name: 'Bob Smith',
       rating: 4,
-      review: 'I love how easy it is to log in with my MetaMask wallet. The transaction history feature helps me stay on top of all my investments.',
+      review: 'I love how easy it is to find and reserve parking using ParkMate. The integration with MetaMask for payments was a nice surprise, making it even more convenient!',
       avatar: 'https://randomuser.me/api/portraits/thumb/men/7.jpg',
     },
     {
       name: 'Charlie Lee',
       rating: 5,
-      review: 'A must-have for crypto enthusiasts! It tracks my DeFi positions effortlessly, and the multi-chain support is a game changer.',
+      review: 'A real game-changer for busy areas like malls. The system detects parking spots instantly, and the payment process is fast and secure. I never have to waste time looking for parking anymore!',
       avatar: 'https://randomuser.me/api/portraits/thumb/men/75.jpg',
     },
   ];
@@ -26,8 +24,7 @@ const Reviews = () => {
   return (
     <section className="py-12 px-6 bg-[#1D232A] min-h-screen">
       <div className="max-w-4xl mx-auto text-left">
-        <h2 className="text-3xl font-semibold text-white mb-8">What Our Users Say</h2>
-        
+        <h2 className="text-3xl font-semibold text-white text-center mb-8">Reviews</h2>
         <div className="space-y-8">
           {reviews.map((review, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-md">

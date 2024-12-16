@@ -15,7 +15,7 @@ const SignedOut = () => {
           <RemoveBackground />
         </div>
 
-      <div className="min-h-screen">
+      <div className="min-h-screen" id='AboutUs'>
         <AboutUs />
       </div>
 

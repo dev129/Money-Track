@@ -16,8 +16,6 @@ export default async function Page() {
     return <div>Unable to fetch user information. Please try again later.</div>;
   }
 
-  const walletAddress = user.web3Wallets?.[0]?.web3Wallet || 'No wallet address available';
-  const apiKey = process.env.MORALIS_API_KEY;
   
   // URL of the image to be processed
 

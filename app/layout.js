@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import backgroundImage from '../app/public/LandingPark.png' // Replace with your actual background image
 
 
+
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
