@@ -11,7 +11,7 @@ const FAQ = () => {
   return (
     <section className="py-12 px-6 bg-[#1D232A] min-h-screen">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-semibold mb-8">Frequently Asked Questions</h2>
+        <h2 className="text-3xl text-white font-semibold mb-8">Frequently Asked Questions</h2>
 
         <div className="space-y-6 text-left">
           {faqData.map((faq, index) => (

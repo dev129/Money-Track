@@ -31,7 +31,7 @@ const SignedOut = () => {
         <CTA />
       </div>
 
-      <Footer />
+      
     </>
   );
 };
