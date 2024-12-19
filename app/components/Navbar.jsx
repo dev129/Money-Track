@@ -62,9 +62,9 @@ const Navbar = () => {
         </div>
 
         {/* Navbar End */}
-        <div className="navbar-end ">
+        <div className="navbar-end  text-white  ">
             <SignedOut >
-              <SignInButton className='btn btn-ghost'/> {/* Button for users not signed in */}
+              <SignInButton className='btn btn-ghost  sm:text-lg md:text-lg xl:text-lg '/> {/* Button for users not signed in */}
             </SignedOut>
             <SignedIn>
               <UserButton /> {/* Button for signed-in users */}
